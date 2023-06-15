@@ -1,0 +1,23 @@
+{
+  "name": "fusion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donskelle/bassliner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donskelle/bassliner/issues"
+  },
+  "homepage": "https://github.com/Donskelle/bassliner#readme",
+  "devDependencies": {
+    "@testing-library/cypress": "^9.0.0",
+    "cypress": "^12.14.0"
+  }
+}
