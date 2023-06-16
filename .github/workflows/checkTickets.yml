@@ -8,8 +8,8 @@ on:
     branches: main
 
 jobs:
-  build:
-
+  initAndCheck:
+    name: Init and Check for Tickets
     runs-on: ubuntu-latest
 
     steps:
@@ -19,4 +19,5 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm i
-      - run: npm test
+      - name: Run Check
+        run: npm test
