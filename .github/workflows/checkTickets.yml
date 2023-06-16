@@ -3,7 +3,7 @@ name: Are 2 Tickets available?
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/5 * * * *'
+    - cron:  '*/6 * * * *'
   push:
     branches: main
 
