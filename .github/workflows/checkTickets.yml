@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Are 2 Tickets available?
 
 on:
   schedule:
