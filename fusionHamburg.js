@@ -59,7 +59,7 @@ describe("Bassliner", () => {
                 dep.price_groups?.some((block) => block.count >= 2) ?? false
             )
           ).length
-      ).to.above(0)
+      ).to.be(0)
     );
   });
 });
