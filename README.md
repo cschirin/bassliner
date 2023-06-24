@@ -1,4 +1,4 @@
-# bassliner 
+# bassliner notification 
 Repo for searching bassliner Tickets. Currently it searches for 2 Bassliner Tickets on 28.06. Test runs every 5 minutes scheduled by cron in github action.
 
 # Setup instructions 
