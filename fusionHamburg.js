@@ -32,22 +32,7 @@ describe("Bassliner", () => {
         ).to.be.true;
       });
   });
-  it("has two free seats before 29.06", async () => {
-    await _spec.expect((ctx) =>
-      expect(
-        ctx.res.body
-          .filter((ele) => !!ele.departures && ele.departures.length >= 1)
-          .filter((ele) => /2023-06-2(8|9) \d{2}:\d{2}:\d{2}/.test(ele.time))
-          .filter((ele) =>
-            ele.departures.some(
-              (dep) =>
-                dep.price_groups?.some((block) => block.count >= 2) ?? false
-            )
-          ).length
-      ).to.above(0)
-    );
-  });
-  it("has two free seats on 28.06", async () => {
+  it("hasn't got two free seats on 28.06", async () => {
     await _spec.expect((ctx) =>
       expect(
         ctx.res.body
